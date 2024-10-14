@@ -9,10 +9,10 @@ services:
     working_dir: /server
     command: npm run start
 
-  # client:
-  #   image: client
-  #   build: ../MERN-CRUD/client
-  #   ports:
-  #     - "3000:3000"
-  #   working_dir: /MERN-CRUD/client
-  #   command: npm start
+  client:
+    image: client
+    build: ../MERN-CRUD/client
+    ports:
+      - "3000:3000"
+    working_dir: /MERN-CRUD/client
+    command: npm start
